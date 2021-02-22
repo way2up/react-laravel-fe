@@ -5,7 +5,7 @@
 /.pnp
 .pnp.js
 .idea
-src/config/api.credentionals.js
+/src/config/api.credentionals.js
 # testing
 /coverage
 # production

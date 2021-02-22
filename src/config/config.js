@@ -1,5 +1,6 @@
-const local = "http://react-laravel-be.loc/api";
+import api from './api.credentionals'
+
 const conf = {
-    'api': local
+    'api': api.src
 };
 export default conf

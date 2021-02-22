@@ -1,5 +1,5 @@
 const api = {
-    'src': "http://react-laravel-be.loc/api",
+    'src': "http://",
 }
 
 export default api

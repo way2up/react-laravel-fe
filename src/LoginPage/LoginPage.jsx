@@ -43,7 +43,7 @@ class LoginPage extends React.Component {
                 <section className="d-flex align-items-center">
                     <div className="container">
                         <div className="user signinBx">
-                            <div className="imgBx"><img
+                            <div className="im••••••gBx"><img
                                 src="https://raw.githubusercontent.com/WoojinFive/CSS_Playground/master/Responsive%20Login%20and%20Registration%20Form/img1.jpg"
                                 alt=""/></div>
                             <div className="formBx">

@@ -9,7 +9,6 @@ import {products} from "./products/products.reducer";
 const rootReducer = combineReducers({
   authentication,
   registration,
-  users,
   alert,
   products
 });

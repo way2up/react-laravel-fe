@@ -21,7 +21,7 @@ function App(props) {
 
     const {alert} = props;
     return (
-        <div className="w-100 position-relative">
+        <div className="w-100 position-relative project-bg">
             <div className="position-absolute alert-container">
                 {alert.message &&
                 <div className={`alert ${alert.type}`}>{alert.message}</div>

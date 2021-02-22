@@ -9,12 +9,12 @@ export const authActions = {
 
 function login(email, password) {
     return dispatch => {
-        dispatch(request({ email }));
+        dispatch(request());
         authService.login(email, password)
             .then(
                 data => {
                     this.history.push({  pathname: '/'})
-                    dispatch(success(data));
+                    dispatch(success(data.user));
                 },
                 error => {
                     dispatch(failure(error.toString()));
@@ -23,7 +23,7 @@ function login(email, password) {
             );
     };
 
-    function request(user) { return { type: constants.LOGIN_REQUEST, user } }
+    function request() { return { type: constants.LOGIN_REQUEST } }
     function success(user) { return { type: constants.LOGIN_SUCCESS, user } }
     function failure(error) { return { type: constants.LOGIN_FAILURE, error } }
 }

@@ -5,6 +5,7 @@ import {baseService} from '../_services';
 
 export const homeService = {
     getAllProducts,
+    getAllCategories,
     apiLogout
 };
 
@@ -15,6 +16,15 @@ function getAllProducts() {
     };
 
     return fetch(`${conf.api}/products`, requestOptions).then(baseService.handleResponse);
+}
+
+function getAllCategories() {
+    const requestOptions = {
+        method: 'GET',
+        headers: authHeader()
+    };
+
+    return fetch(`${conf.api}/categories`, requestOptions).then(baseService.handleResponse);
 }
 
 function apiLogout() {
